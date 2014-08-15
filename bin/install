@@ -1,0 +1,3 @@
+#!/bin/bash -e
+
+curl -L -s http://downloads.sourceforge.net/sourceforge/xymon/Xymon/4.3.17/xymon-client-4.3.17-linux-amd64.tar.gz | tar xz

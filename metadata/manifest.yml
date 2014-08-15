@@ -1,0 +1,31 @@
+---
+Name: xymon-client
+Cartridge-Short-Name: XYMON_CLIENT
+Architecture: x86_64
+Display-Name: xymon 4.3.17
+Description: Xymon is a system for monitoring of hosts and networks, inspired by the Big Brother system.
+Version: '4.3'
+Versions:
+- '4.3'
+Cartridge-Version: 0.1.0
+Cartridge-Vendor: markspace
+License: GPL
+Vendor: markspace
+Categories:
+- embedded
+Website: http://www.xymon.com
+Provides:
+- xymon-client-4.3
+- xymon-client
+Scaling:
+  Min: 1
+  Max: -1
+Group-Overrides:
+- components:
+  - xymon-client-4.3
+  - web_framework
+Subscribes:
+  set-env:
+    Type: ENV:*
+    Required: false
+Source-Url: https://github.com/markspace/openshift-cartridge-xymon.git
